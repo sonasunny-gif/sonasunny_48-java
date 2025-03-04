@@ -1,0 +1,11 @@
+a).
+ create table employee108(empno numeric(6) primary key,ename varchar(20) not null,job varchar(20),Mgr numeric check(Mgr = 1 OR Mgr = 2),sal numeric(10,2)check(sal>5000));
+b).
+describe employee108;
+alter table employee108 add section varchar(10);
+c).
+alter table employee108 modify(job varchar(25));
+d).
+alter table employee108 rename column job to designation;
+e).
+
